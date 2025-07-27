@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/bg"
+        tools:context=".colors">
+    <ImageView android:layout_width="130dp"
+               android:layout_height="130dp"
+               android:src="@drawable/black"
+               android:id="@+id/black"
+               android:onClick="startBlack"
+               tools:ignore="MissingConstraints"
+               android:background="?attr/selectableItemBackground"
+               android:focusable="true"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginTop="268dp" app:layout_constraintHorizontal_bias="0.249">
+
+    </ImageView>
+    <ImageView android:layout_width="130dp"
+               android:layout_height="130dp"
+               android:src="@drawable/white"
+               android:onClick="startWhite"
+               android:backgroundTint="@color/black"
+               android:background="?attr/selectableItemBackground"
+               android:focusable="true"
+               android:id="@+id/white" tools:ignore="MissingConstraints"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintHorizontal_bias="0.793" android:layout_marginBottom="492dp"/>
+    <ImageView android:layout_width="130dp"
+               android:layout_height="130dp"
+               android:src="@drawable/blue"
+               android:onClick="startBlue"
+               android:id="@+id/blue"
+               android:background="?attr/selectableItemBackground"
+               android:focusable="true"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintHorizontal_bias="0.249" android:layout_marginBottom="348dp"/>
+    <ImageView android:layout_width="130dp"
+               android:layout_height="130dp"
+               android:src="@drawable/red"
+               android:id="@+id/red"
+               android:onClick="startRed"
+               android:background="?attr/selectableItemBackground"
+               android:focusable="true"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintHorizontal_bias="0.793" android:layout_marginBottom="348dp"/>
+    <ImageView android:layout_width="130dp"
+               android:layout_height="130dp"
+               android:src="@drawable/green"
+               android:id="@+id/green"
+               android:onClick="startGreen"
+               android:background="?attr/selectableItemBackground"
+               android:focusable="true"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintHorizontal_bias="0.498" android:layout_marginBottom="216dp"/>
+    <Button
+            android:text="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="176dp"
+            app:layout_constraintHorizontal_bias="0.498"
+
+            android:backgroundTint="@color/design_default_color_error"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
